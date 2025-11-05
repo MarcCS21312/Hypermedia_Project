@@ -1,0 +1,193 @@
+body {
+    margin: 0;
+    font-family: 'Kaisei Tokumin';
+    background-color: #1E1E1E;
+    color: white;
+}
+
+h1, h2 {
+    color: #f1e087;
+}
+
+.topbar {
+    font-family: 'Inria Serif', serif;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3f3f48;
+    padding: 10px 25px;
+    font-size: 18px;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.menu a {
+    margin-left: 15px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 30px 50px;
+}
+
+.cv {
+    max-width: 620px;
+}
+
+.title {
+    text-align: center;
+    font-size: 38px;
+}
+
+.profile {
+    display: flex;
+    gap: 20px;
+}
+
+.profile img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.description {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.skills-box {
+    background-color: #1a1a1d;
+    border-radius: 4px;
+    padding: 25px;
+    margin-top: 45px;
+    text-align: center;
+}
+
+.skills-box h2 {
+    font-size: 30px;
+    margin: 0;
+    text-align: center;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #b89f60;
+    margin: 15px 0;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.skills .group {
+    width: 50%;
+    position: relative;
+}
+
+.skills .group:first-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -25px;
+    width: 2px;
+    height: 100%;
+    background-color: #b89f60;
+}
+
+.group ul {
+    font-size: 14px;
+    line-height: 22px;
+    text-align: left;
+}
+
+.portfolio .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 210px);
+    gap: 25px;
+}
+
+.box {
+    background-color: #e6e8eb;
+    height: 210px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 6px;
+}
+
+.box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 6px;
+    border-radius: 4px;
+    background-color: #0b0b0e;
+}
+
+.formation {
+    background-color: #1a1a1d;
+    padding: 50px 12vw;
+    margin-top: 90px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.formation .divider {
+    margin: 15px auto;
+}
+
+.formation-card {
+    margin: 20px auto;
+}
+
+a {
+    color: #d8c371;
+    text-decoration: none;
+}
+
+.languages-title {
+    color: #f1e087;
+    font-size: 26px;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+
+@media(max-width: 1200px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}
+@media(max-width: 900px) {
+    .portfolio .grid {
+        grid-template-columns: repeat(2, 210px);
+    }
+}
+@media(max-width: 550px) {
+    .portfolio .grid {
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+    .skills .group:first-child::after {
+        display: none;
+    }
+}
