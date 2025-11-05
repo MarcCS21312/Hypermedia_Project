@@ -25,13 +25,13 @@ web-link: https://marccs21312.github.io/Hypermedia_Project/
   The structure is efficient. At the top, there is a menu (“header”) that stays fixed (“sticky”). This menu has my name (clickable, which takes you to the “home”) and two main links that lead to “Jobs” (the portfolio) and 
   “Formation” (my studies).
   
-  The most important part of the page, the one that is seen first, is divided into two large columns using “flexbox”. In the left column (<div class="cv">) there is my résumé in text: a short introduction, my photo and the 
-  list of skills. In the right column ( <div class="portfolio"> ) I have placed the visual portfolio, with images and GIFs of my work.
+  The most important part of the page, the one that is seen first, is divided into two large columns using “flexbox”. In the left column (<div #class="cv">) there is my résumé in text: a short introduction, my photo and 
+  the list of skills. In the right column ( <div #class="portfolio"> ) I have placed the visual portfolio, with images and GIFs of my work.
   
   I have made this decision because this way the recruiter can have both things visible at the same time: they can read what I can do while looking at the visual examples. I think it is the most efficient way to present 
   myself.
   
-  Finally, below these two columns, I have added the section “Formation” ( <section id="formation"> ). This section occupies the full width and contains the information about my studies, courses and the languages I speak. I
+  Finally, below these two columns, I have added the section “Formation” ( <section #id="formation"> ). This section occupies the full width and contains the information about my studies, courses and the languages I speak.I
   have placed it at the end because it is important, but less urgent than the portfolio and the skills.
   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -44,7 +44,7 @@ web-link: https://marccs21312.github.io/Hypermedia_Project/
   importantly, makes the images and GIFs of the portfolio stand out much more, which in the end is what I want to sell.
 
   To make it easy to read, the main text is white. But to give it a touch of color and personality, I have used a yellow/gold color (like “#f1e087” or “#b89f60”) for the titles, links and the dividing lines 
-  ( <div class="divider"> ).
+  ( <div #class="divider"> ).
 
   An important decision has been the typography. I did not want to use the typical “sans-serif” fonts (like Arial or Roboto) that you see everywhere. I have chosen two “serif” fonts (with serif) that I have imported from 
   Google Fonts: ‘Kaisei Tokumin’ for the normal text and ‘Inria Serif’ for the menu. I think these fonts give a more artistic or “gallery” touch, which fits well with an artist’s portfolio.
